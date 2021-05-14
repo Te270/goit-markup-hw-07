@@ -427,6 +427,8 @@ img {
 
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .team-border {
@@ -454,6 +456,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin-top: 16px;
 }
 
 .socials-icons-item {
@@ -483,14 +486,14 @@ img {
   width: 20px;
   height: 20px;
   fill: rgba(175, 177, 184, 1);
-
-  transition: background-color var(--animation);
 }
 
 .socials-icons-link:hover .socials-icons-svg,
 .socials-icons-link:focus .socials-icons-svg {
   fill: var(--white-accent-color);
   background-color: var(--accent-color);
+
+  transition: background-color var(--animation), fill var(--animation);
 }
 
 .list .socials-icons-item {
@@ -677,9 +680,12 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
 
   color: #ffffff;
 }
+
 .footer-label {
   display: flex;
   align-items: center;
@@ -700,6 +706,11 @@ footer {
   line-height: 1.25px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail:hover,
+.footer-mail:focus-within {
+  border: 1px solid #2196f3;
 }
 
 .footer-mail input::placeholder {
@@ -758,6 +769,10 @@ footer {
 
   background-color: var(--modal-color);
   padding: 40px 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal-close {
@@ -774,15 +789,24 @@ footer {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   outline: none;
   transition: border var(--animation);
 }
 
+.modal-close:hover,
+.modal-close:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .modal-icon {
   transition: fill var(--animation);
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: rgba(33, 150, 243, 1);
 }
 
 .modal-top {
@@ -845,6 +869,7 @@ footer {
 
 textarea {
   resize: none;
+  margin-bottom: 17px;
 }
 
 .form-comment {
@@ -861,8 +886,12 @@ textarea {
 
 .checkbox-label {
   display: block;
-  margin-top: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.checkbox-border:focus-within {
+  border: 1px solid #2196f3;
 }
 
 .checkbox-policy {
@@ -880,8 +909,6 @@ textarea {
   border: 2px solid #212121;
 }
 .checkbox {
-  /* appearance: none;
-  position: absolute;*/
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
