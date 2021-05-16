@@ -10,12 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--<link rel="stylesheet" href="https://cdnjs.com/libraries/modern-normalize ">-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -84,7 +83,7 @@
       <!-- Особенности - заголовок h2 спрятать-->
       <section class="section">
         <div class="container">
-          <h2 class="section-title visually-hidden">Особенности</h2>
+          <h2 class="section__title visually-hidden">Особенности</h2>
           <ul class="features list">
             <li class="features__item">
               <div class="features__content">
@@ -166,7 +165,7 @@
 
       <section class="section works works--top">
         <div class="container">
-          <h2 class="section-title works__title">Чем мы занимаемся</h2>
+          <h2 class="section__title works__title">Чем мы занимаемся</h2>
           <ul class="list flex-item">
             <li class="flex-item works__picture">
               <div class="works__thumb">
@@ -211,7 +210,7 @@
       <!-- Наша команда -->
       <section class="team section">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team__master list flex-item">
             <li class="team__border">
               <div>
@@ -430,16 +429,16 @@
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title clients">Постоянные клиенты</h2>
+        <h2 class="section__title clients">Постоянные клиенты</h2>
         <ul class="clients__list">
           <li class="list clients__company">
             <a
               href=""
-              class="company-img"
+              class="clients__img"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="clients-svg" width="41" height="47">
+              <svg class="clients__svg" width="41" height="47">
                 <use href="./images/icons/symbol-defs.svg#icon-logo1"></use>
               </svg>
             </a>
@@ -447,11 +446,11 @@
           <li class="list clients__company">
             <a
               href=""
-              class="company-img"
+              class="clients__img"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="clients-svg" width="40" height="52">
+              <svg class="clients__svg" width="40" height="52">
                 <use href="./images/icons/symbol-defs.svg#icon-logo2"></use>
               </svg>
             </a>
@@ -459,11 +458,11 @@
           <li class="list clients__company">
             <a
               href=""
-              class="company-img"
+              class="clients__img"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="clients-svg" width="43" height="41">
+              <svg class="clients__svg" width="43" height="41">
                 <use href="./images/icons/symbol-defs.svg#icon-logo3"></use>
               </svg>
             </a>
@@ -471,11 +470,11 @@
           <li class="list clients__company">
             <a
               href=""
-              class="company-img"
+              class="clients__img"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="clients-svg" width="84" height="40">
+              <svg class="clients__svg" width="84" height="40">
                 <use href="./images/icons/symbol-defs.svg#icon-logo4"></use>
               </svg>
             </a>
@@ -483,11 +482,11 @@
           <li class="list clients__company">
             <a
               href=""
-              class="company-img"
+              class="clients__img"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="clients-svg" width="62" height="45">
+              <svg class="clients__svg" width="62" height="45">
                 <use href="./images/icons/symbol-defs.svg#icon-logo5"></use>
               </svg>
             </a>
@@ -495,11 +494,11 @@
           <li class="list clients__company">
             <a
               href=""
-              class="company-img"
+              class="clients__img"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="clients-svg" width="93" height="43">
+              <svg class="clients__svg" width="93" height="43">
                 <use href="./images/icons/symbol-defs.svg#icon-logo6"></use>
               </svg>
             </a>
@@ -618,6 +617,7 @@
         </button>
         <div class="modal-cover">
           <p class="modal--top">Оставьте свои данные, мы вам перезвоним</p>
+
           <form class="form" autocomplete="on">
             <div class="form__field">
               <label for="name" class="form-label">Имя</label>
